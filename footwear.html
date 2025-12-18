@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Footwear Section</title>
+
+    <style>
+        body {
+           font-family: "Trebuchet MS", sans-serif;
+
+            background: #f0fff4;
+        }
+
+        .footwear {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .footwear h1 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        /* Main container */
+        .frames {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+        }
+
+        /* Individual frame */
+        .frame {
+            width: 45%;
+            height: 420px;
+            overflow-y: auto;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        /* Men & Women colors */
+        .men {
+            background: #e6f4f1;
+            color: black;
+        }
+
+        .women {
+            background: #fff1dc;
+            color: black;
+        }
+
+        .frame h3 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        /* Product item */
+        .product {
+            display: flex;
+            background: white;
+            color: black;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            padding: 10px;
+            align-items: center;
+        }
+
+        .product img {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+
+        .details h4 {
+            margin: 0;
+        }
+
+        .details p {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        .details button {
+            padding: 5px 10px;
+            border: none;
+            background: #222;
+            color: white;
+            cursor: pointer;
+        }
+
+        .details button:hover {
+            background: #555;
+        }
+
+        /* Scrollbar (optional) */
+        .frame::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .frame::-webkit-scrollbar-thumb {
+            background: rgba(0,0,0,0.4);
+            border-radius: 5px;
+        }
+
+        /* Responsive */
+        @media (max-width: 800px) {
+            .frames {
+                flex-direction: column;
+            }
+
+            .frame {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<section class="footwear">
+    <h1>Footwear Collection</h1>
+
+    <div class="frames">
+
+        <!-- MEN FRAME -->
+        <div class="frame men">
+            <h3>Men's Footwear</h3>
+
+            <div class="product">
+                <img src="msports.jpg" alt="Men Shoe">
+                <div class="details">
+                    <h4>Sports Shoe</h4>
+                    <p>₹1999</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="mflats.jpg" alt="Men Shoe">
+                <div class="details">
+                    <h4>flats</h4>
+                    <p>₹1499</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="mshoes.jpg" alt="Men Shoe">
+                <div class="details">
+                    <h4>Formal Shoe</h4>
+                    <p>₹2499</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- WOMEN FRAME -->
+        <div class="frame women">
+            <h3>Women's Footwear</h3>
+
+            <div class="product">
+                <img src="heels.jpg" alt="Women Shoe">
+                <div class="details">
+                    <h4>Heels</h4>
+                    <p>₹1799</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="flats.jpg" alt="Women Shoe">
+                <div class="details">
+                    <h4>Flats</h4>
+                    <p>₹1299</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="shoes.jpg" alt="Women Shoe">
+                <div class="details">
+                    <h4>Shoes</h4>
+                    <p>₹999</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
